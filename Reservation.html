@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/TheHaukai.css">
+        <title>The Haukai Resturant Reservation</title>
+    </head>
+  <body>
+    <h1>Make a reservation with The Haukai</h1>
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">Reservation Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone Number</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="people">Number of people?</label>
+      <input type="number" id="adult" name="total_people" placeholder="2" min="1" required>
+    </div>
+    
+    <div class="elem-group inlined">
+      <label for="Reservation date">Reservation date</label>
+      <input type="date" id="Reservation date" name="reservation" required>
+    </div>
+    
+    <hr>
+    <div class="elem-group">
+      <label for="message">Anything we need to be aware of?</label>
+      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+    </div>
+    <hr>
+    <div>
+    <button type="submit">Make reservation</button>
+    </div>
+    <hr>
+    <div>
+      <a href = "index.html"><img src="images/home.png" alt="" style="width:50%"></a>
+  </div>
+  </form>
+  <footer>
+    <p>We collect personal information from you, including information about your name and contact information.
+        We collect this information in order to create bookings and monitor booking statistics.
+        You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
+    </p>
+    <p>If you would like to ask for a copy of your information, or to have it corrected, please contact us at 035469876.</p>
+</footer>
+  </body>
+</html>
