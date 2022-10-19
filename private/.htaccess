@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Protected Settings Page"
-AuthUserFile "C:\Users\nexan\Desktop\BIT 607\Assignment 2\Haiqin HE 5048264 BIT607 Assignment 2 Part 1\Haiqin HE 5048264 BIT607 The Haukai\.htpasswd"
+AuthUserFile "C:\Users\nexan\Desktop\BIT 607\The-Haukai\private\.htpasswd"
 Require valid-user
