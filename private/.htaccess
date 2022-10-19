@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Protected Settings Page"
-AuthUserFile "assignment3/private/.htpasswd"
+AuthUserFile "private/.htpasswd"
 Require valid-user
